@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+import "./Lobby.css";
+
 const Lobby = () => {
   const [name, setName] = useState("");
   const [room, setRoom] = useState("");
