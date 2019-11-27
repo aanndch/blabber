@@ -30,7 +30,7 @@ io.on("connection", socket => {
 
     socket.join(user.room);
 
-    // callback(0);
+    callback();
   });
 
   socket.on("sendMessage", (message, callback) => {
@@ -38,7 +38,7 @@ io.on("connection", socket => {
 
     io.to(user.room).emit("message", { user: user.name, text: message });
 
-    // callback(0);
+    callback();
   });
 
   socket.on("disconnect", () => {
