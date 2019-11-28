@@ -25,17 +25,17 @@ const Chat = ({ location }) => {
     setRoom(room);
 
     socket.emit("join", { name, room }, () => {});
-
-    return () => {
-      socket.emit("disconnect");
-      socket.off();
-    };
   }, [ENDPOINT, location.search]);
 
   useEffect(() => {
     socket.on("message", message => {
       setMessages([...messages, message]);
     });
+
+    return () => {
+      socket.emit("disconnect");
+      socket.off();
+    };
   }, [messages]);
 
   const sendMessage = e => {

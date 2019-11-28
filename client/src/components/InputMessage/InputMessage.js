@@ -12,7 +12,7 @@ const InputMessage = ({ message, sendMessage, setMessage }) => {
         value={message}
         onChange={e => setMessage(e.target.value)}
       />
-      <input type="submit" value="Send" className="send-button" />
+      <input type="submit" value="SEND" className="send-button" />
     </form>
   );
 };
