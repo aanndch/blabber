@@ -5,7 +5,7 @@ form {
 }
 
 .input-message {
-  flex-grow: 4;
+  width: 80%;
   font-size: 1.1rem;
   padding-left: 0.5rem;
   border: none;
@@ -14,7 +14,7 @@ form {
 }
 
 .send-button {
-  flex-grow: 1;
+  width: 20%;
   background-color: #2f3542;
   box-shadow: none;
   color: white;
