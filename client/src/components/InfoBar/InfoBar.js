@@ -10,9 +10,9 @@ const InfoBar = ({ room }) => (
       <h3>{room}</h3>
     </div>
     <div className="exit-room">
-      <Link to="/" style={{ textDecoration: "none" }}>
+      <a href="/" style={{ textDecoration: "none" }}>
         <button className="close-button">EXIT</button>
-      </Link>
+      </a>
     </div>
   </div>
 );
