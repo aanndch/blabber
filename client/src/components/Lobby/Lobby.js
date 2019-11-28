@@ -22,12 +22,14 @@ const Lobby = () => {
           placeholder="Name"
           value={name}
           onChange={e => setName(e.target.value)}
+          required
         />
         <input
           type="text"
           placeholder="Room"
           value={room}
           onChange={e => setRoom(e.target.value)}
+          required
         />
         <Link to={`/chat?name=${name}&room=${room}`} onClick={e => joinChat(e)}>
           <button type="submit">JOIN!</button>
