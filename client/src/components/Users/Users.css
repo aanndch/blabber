@@ -1,0 +1,28 @@
+.users {
+  height: 600px;
+  width: 200px;
+  border-radius: 0 4px 4px 0;
+  background-color: #57606f;
+}
+
+.all-users {
+  height: 551px;
+  overflow-y: auto;
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 1rem;
+}
+
+.users h3 {
+  color: #f1f2f6;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 1rem;
+}
+
+.users p {
+  color: #f1f2f6;
+}

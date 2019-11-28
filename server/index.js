@@ -30,10 +30,10 @@ io.on("connection", socket => {
 
     socket.join(user.room);
 
-    // io.to(user.room).emit("roomData", {
-    //   room: user.room,
-    //   users: getUsersInRoom(user.room)
-    // });
+    io.in(user.room).emit("roomData", {
+      room: user.room,
+      users: getUsersInRoom(user.room)
+    });
 
     callback();
   });
@@ -53,6 +53,10 @@ io.on("connection", socket => {
       io.in(user.room).emit("message", {
         user: "admin",
         text: `${user.name} has left.`
+      });
+      io.in(user.room).emit("roomData", {
+        room: user.room,
+        users: getUsersInRoom(user.room)
       });
     }
   });
