@@ -8,18 +8,17 @@
   text-align: center;
 }
 
-.join-creds input:first-child {
-  border: none;
-  border-radius: 4px 4px 0 0;
-  border-bottom: 1px solid #2f3542;
-}
-
 .join-creds input {
   border: none;
   height: 50px;
   font-size: 1.1rem;
   padding-left: 0.5rem;
   outline: none;
+}
+
+.join-creds input:first-of-type {
+  border-radius: 4px 4px 0 0;
+  border-bottom: 2px solid #2f3542;
 }
 
 .join-creds button {
