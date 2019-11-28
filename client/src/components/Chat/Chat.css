@@ -35,8 +35,15 @@
 .message-text {
   display: flex;
   align-items: center;
+  word-break: break-all;
 }
 
 .message-text img {
   margin: 0 0.2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .chat-box {
+    width: 100%;
+  }
 }

@@ -26,3 +26,16 @@
 .users p {
   color: #f1f2f6;
 }
+
+@media only screen and (max-width: 500px) {
+  .users {
+    height: 200px;
+    min-height: 200px;
+    width: 100%;
+  }
+
+  .all-users {
+    height: 150px;
+    min-height: 150px;
+  }
+}
