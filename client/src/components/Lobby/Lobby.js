@@ -14,22 +14,25 @@ const Lobby = () => {
   };
 
   return (
-    <div>
-      <input
-        type="text"
-        placeholder="Name"
-        value={name}
-        onChange={e => setName(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="Room"
-        value={room}
-        onChange={e => setRoom(e.target.value)}
-      />
-      <Link to={`/chat?name=${name}&room=${room}`} onClick={e => joinChat(e)}>
-        <button type="submit">Join room!</button>
-      </Link>
+    <div className="container">
+      <div className="join-creds">
+        <h1>blabber</h1>
+        <input
+          type="text"
+          placeholder="Name"
+          value={name}
+          onChange={e => setName(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Room"
+          value={room}
+          onChange={e => setRoom(e.target.value)}
+        />
+        <Link to={`/chat?name=${name}&room=${room}`} onClick={e => joinChat(e)}>
+          <button type="submit">JOIN!</button>
+        </Link>
+      </div>
     </div>
   );
 };

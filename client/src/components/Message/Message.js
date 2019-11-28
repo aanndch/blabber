@@ -7,8 +7,7 @@ const Message = ({ user, message, name }) => {
   const isSentByAdmin = user === "admin";
 
   const messageStyle = {
-    alignSelf: isSentByCurrentUser && "flex-end",
-    textAlign: isSentByCurrentUser && "end",
+    alignSelf: isSentByCurrentUser ? "flex-end" : "flex-start",
     backgroundColor: isSentByCurrentUser
       ? "#74b9ff"
       : isSentByAdmin
