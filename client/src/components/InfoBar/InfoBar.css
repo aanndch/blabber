@@ -1,0 +1,36 @@
+.room-heading {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #747d8c;
+  padding: 0 1rem;
+}
+
+.room-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.online-icon {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: aquamarine;
+  margin-right: 0.5rem;
+}
+
+.close-button {
+  background-color: #2f3542;
+  border-radius: 4px;
+  box-shadow: none;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.5rem;
+  letter-spacing: 1.5px;
+}
+
+.close-button:hover {
+  cursor: pointer;
+}

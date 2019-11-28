@@ -1,0 +1,40 @@
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-box {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.css-13azwyo {
+  height: 500px;
+}
+
+.css-y1c0xs {
+  display: flex;
+  flex-direction: column;
+}
+
+.messages-box {
+  background-color: #f1f2f6;
+}
+
+.message {
+  width: 70%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: #2f3542;
+  border-radius: 4px;
+}
+
+.user {
+  font-size: 0.7rem;
+}

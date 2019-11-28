@@ -1,0 +1,13 @@
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-message {
+  flex-grow: 4;
+}
+
+.send-button {
+  flex-grow: 1;
+}

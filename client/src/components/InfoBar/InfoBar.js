@@ -1,15 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./InfoBar.css";
 
 const InfoBar = ({ room }) => (
-  <div>
-    <div>
-      {/* Online Icon */}
+  <div className="room-heading">
+    <div className="room-name">
+      <div className="online-icon"></div>
       <h3>{room}</h3>
     </div>
-    <div>
-      <a href="/">{/* CLose Icon */}</a>
+    <div className="exit-room">
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <button className="close-button">EXIT</button>
+      </Link>
     </div>
   </div>
 );
