@@ -1,5 +1,7 @@
 import React from "react";
 
+import ReactEmoji from "react-emoji";
+
 const Message = ({ user, message, name }) => {
   const trimmedName = name.trim().toLowerCase();
 
@@ -18,7 +20,7 @@ const Message = ({ user, message, name }) => {
   return (
     <div className="message" style={messageStyle}>
       <p className="user">{user}</p>
-      <p className="message-text">{message}</p>
+      <p className="message-text">{ReactEmoji.emojify(message)}</p>
     </div>
   );
 };
